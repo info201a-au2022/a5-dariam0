@@ -1,0 +1,13 @@
+name: a5shiny
+title: a5shiny
+username:
+account: dmang
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7859882
+bundleId: 6617367
+url: https://dmang.shinyapps.io/a5shiny/
+when: 1670617378.12986
+lastSyncTime: 1670617378.12988
+asMultiple: FALSE
+asStatic: FALSE
