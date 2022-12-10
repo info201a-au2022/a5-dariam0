@@ -5,18 +5,19 @@ library(plotly)
 
 # intro page 
 intro_page <- tabPanel(
-  title = "Introduction",
-  p("test")
+  title = "Analyzing CO2 Emission Trends",
+  uiOutput("intro")
 )
 
 # variables to add to lineplot
-linegraph_var <- sidebarPanel(uiOutput("select_country_continents1"),
+linegraph_var <- sidebarPanel(uiOutput("select_var"),
+                              uiOutput("select_country_continents1"),
                               uiOutput("select_country_continents2"),
                               uiOutput("select_country_continents3"),
                               uiOutput("select_year"))
 
 # line plot itself
-linegraph <- mainPanel("test")
+linegraph <- mainPanel(plotlyOutput("linechart"))
 
 # linegraph page
 linegraph_page <- tabPanel(
