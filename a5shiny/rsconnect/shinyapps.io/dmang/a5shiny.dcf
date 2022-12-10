@@ -5,9 +5,9 @@ account: dmang
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7859882
-bundleId: 6619281
+bundleId: 6619364
 url: https://dmang.shinyapps.io/a5shiny/
-when: 1670656213.26191
-lastSyncTime: 1670656213.26196
+when: 1670657584.87249
+lastSyncTime: 1670657584.87249
 asMultiple: FALSE
 asStatic: FALSE

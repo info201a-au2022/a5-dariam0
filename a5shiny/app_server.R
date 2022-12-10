@@ -72,14 +72,14 @@ highest_share_co2_country_2021 <- co2_data %>%
   filter(year == 2021) %>%
   filter(!(country %in% noncountries)) %>%
   filter(share_global_co2 == max(share_global_co2, na.rm = TRUE)) %>%
-  select(country)
+  pull(country)
 
 # Their % share
 highest_share_co2_2021_num <- co2_data %>%
   filter(year == 2021) %>%
   filter(!(country %in% noncountries)) %>%
   filter(share_global_co2 == max(share_global_co2, na.rm = TRUE)) %>%
-  select(share_global_co2)
+  pull(share_global_co2)
 
 #   How much has co2 per capita over the last 20 years?
 co2_per_cap_change_value <- co2_data %>%
